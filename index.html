@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherSurface@2pi | Real-Time Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">Fetching weather data...</div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-cloud-sun"></i>
+                <span>WeatherInSurface</span>
+            </div>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search for a city..." value="Kolkata">
+                <button class="search-btn">Search</button>
+            </div>
+        </header>
+
+        <main class="weather-display">
+            <div class="weather-card current-weather">
+                <h1 class="location">Kolkata</h1>
+                <p class="date">Monday, June 5, 2023</p>
+                <div class="weather-icon" id="weather-icon"></div>
+                <div class="temperature">
+                    28<span>°C</span>
+                </div>
+                <p class="description">Partly Cloudy</p>
+                <div class="details">
+                    <div class="detail-item">
+                        <i class="fas fa-wind"></i>
+                        <span class="detail-label">Wind</span>
+                        <span class="detail-value">12 km/h</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-tint"></i>
+                        <span class="detail-label">Humidity</span>
+                        <span class="detail-value">78%</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-compress-alt"></i>
+                        <span class="detail-label">Pressure</span>
+                        <span class="detail-value">1012 hPa</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-eye"></i>
+                        <span class="detail-label">Visibility</span>
+                        <span class="detail-value">10 km</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
